@@ -144,7 +144,7 @@ Without **data versioning** or a structured way to track experiments, you strugg
 
 **12.** 
 - git log --oneline
-- git checkout <code>  (go to data_version_1)
+- git checkout "id"  (go to data_version_1)
 - dvc pull  (it will give the data_version_1 Data)
 
 **come back to the letest branch:**
