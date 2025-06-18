@@ -7,6 +7,7 @@ Here’s a **cheat sheet** of essential Docker commands for managing images, con
 docker login                   # Log in to Docker Hub (default)
 docker login -u <username>     # Log in with a specific username
 docker logout                  # Log out
+echo 'enter_your_password' | sudo docker login -u yasin005 --password-stdin docker.io #login docker.io otherwize we will cann't create a image.
 ```
 
 ---
@@ -83,6 +84,7 @@ docker network inspect <network_name>  # Inspect a network
 #### **A) Run a container**
 ```bash
 docker run -d -p 8080:80 --name my_nginx nginx  # Run Nginx in detached mode
+docker run -p 8000:8000 --name movie_recommender recom # without detached mode
 ```
 
 #### **B) Copy files to/from a container**
